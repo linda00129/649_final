@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SI649 Narrative Visualization Project</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+        }
+
+        nav{
+            background-color: rgb(150, 225, 248);
+            width:100%;
+            position:fixed;
+            top:0;
+            z-index:10;
+        }
+
+        main{
+            margin: 8% 5% 5% 5%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h2>SI649 Narrative Visualization Project</h2>
+    </nav>
+    <main>
+        <h1>Heart Disease Indicators and Their Relations</h1>
+        <div id="intro" class="intro_text">
+            <p>In the rhythm of heat beats lies the essence of our life and the complex interplay of body functions: heart, the engine of the human body, and blood running through veins to transfer oxygen as fuel. Unfortunately, sometimes this engine may also come wrong, which is called heart disease, a leading cause of death worldwide.</p>
+            <p>With the risk of heart disease on the rise, understanding its indicators has become much more crucial. Digged from the comprehensive Heart Disease Dataset with 11 common features from age and sex to more specific measures such as cholesterol levels and resting electrocardiogram results, here are some facts that can be helpful in predicting and preventing:</p>
+        </div>
+        <div id="part1">
+            <h2>Age, Maximum Heart Rate, and Many Other Heart Disease Indicators</h2>
+            <div class="chart">
+                <div class='tableauPlaceholder' id='viz1714009191554' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;He&#47;Heart_Disease_Indicators&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Heart_Disease_Indicators&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;He&#47;Heart_Disease_Indicators&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='zh-CN' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1714009191554');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='2327px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            </div>
+            <div class="intro_text">
+                <p>
+                    Observing the trend line, it's evident that maximum heart rate decreases as age increases. This decline reflects the natural physiological changes associated with aging and shifts in cardiovascular health. Individuals with heart disease typically exhibit lower maximum heart rates compared to their healthy counterparts, underscoring the impact of cardiac conditions on heart function as we age.
+                </p>
+                <p>
+                    In exploring Scatter Size Parameters on the right side of the visualization, we delve into how factors such as sex, chest pain type, fasting blood sugar levels, exercise-induced angina, and ST slope contribute to the likelihood of developing heart disease. By selecting a specific group of people like male in sex, we can discern notable trends.
+                </p>
+                <ul>
+                    <li>Notably, males tend to face a higher risk of heart disease than females, attributed to a combination of hormonal disparities, lifestyle habits, and genetic predispositions.</li>
+                    <li>Chest pain type serves as a crucial indicator of heart health, with typical angina often signaling underlying cardiac issues. Conversely, non-anginal pain may have less impact on daily life but should not be disregarded entirely.</li>
+                    <li>Moreover, fasting blood sugar levels provide valuable insights into diabetes risk, a condition intricately linked to heart disease. Elevated levels exceeding 120 mg/dL indicate a heightened susceptibility to heart conditions.</li>
+                    <li>Individuals experiencing exercise-induced angina are also more prone to heart disease, underscoring the importance of monitoring symptoms during physical activity.</li>
+                    <li>The ST slope on an electrocardiogram serves as another critical marker, with a downward slope indicating an increased likelihood of heart disease. This observation underscores the importance of early detection and intervention to mitigate cardiovascular risks.</li>
+                </ul>
+            </div>
+        </div>
+        <div id="part2">
+            <h2>Relation between Cholesterol and Chest Pain Type</h2>
+            <div class="chart">
+                <div class='tableauPlaceholder' id='viz1714009646284' style='position: relative'><noscript><a href='#'><img alt='final ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;3_&#47;3_17140059130430&#47;final&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='3_17140059130430&#47;final' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;3_&#47;3_17140059130430&#47;final&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='zh-CN' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1714009646284');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='977px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            </div>
+            <div class="intro_text">
+                <p>
+                    Cholesterol also plays an important role here, not only affecting heart health but also influencing the type and severity of chest pain one might experience. When cholesterol levels are too high, they can stress the blood vessels, making arteries hard and narrow, and increasing the risk of heart disease. On the other hand, when cholesterol levels are too low, it can pose potential threats to other medical conditions. Extremely low cholesterol levels can be associated with increased risks of certain types of cancer and can also exacerbate anxiety disorders.
+                </p>
+                <p>
+                    As a result, when the vascular system is influenced by cholesterol levels, different types of chest pain may appear:
+                </p>
+                <ul>
+                    <li><strong>Typical Angina:</strong> When high cholesterol levels cause narrowing and hardening of the arteries, this reduced blood flow to the heart can result in typical angina. It is often described as a tightness, pressure, or squeezing sensation in the chest that may radiate to the arms, neck, jaw, shoulders, or back. It usually occurs with exertion or emotional stress and improves with rest or nitroglycerin.</li>
+                    <li><strong>Atypical Angina:</strong> This type of chest pain may still be related to cholesterol imbalances but doesn't follow the typical pattern. It might present as chest discomfort that is sharp, fleeting, or occurs in different locations than typical angina. It can be more challenging to diagnose and may not always be associated with exertion.</li>
+                    <li><strong>Non-Anginal Pain:</strong> Although less directly linked to cholesterol, non-anginal chest pain can also be influenced by vascular health. This type of chest pain may be sharp, burning, or stabbing and can be related to conditions such as esophageal reflux, muscle strain, or anxiety.</li>
+                    <li><strong>Asymptomatic:</strong> Some individuals with high cholesterol levels may not experience any chest pain or other symptoms. However, this doesn't mean they are free from cardiovascular risks. Atherosclerosis can progress silently over time, leading to significant blockages without any signs. Regular cholesterol screenings and cardiovascular assessments are crucial for early detection and prevention.</li>
+                </ul>  
+            </div>
+        </div>
+        <div id="ending" class="intro_text">
+            <h2>Conclusion</h2>
+            <div class="intro_text">
+                <p>
+                    In conclusion, understanding the relationships between age and max heart rate, as well as cholesterol levels and chest pain types, provides valuable insights into heart disease risk. Regular monitoring of these factors with regular lifestyle and timely medical checks can significantly reduce the risk of heart disease and improve overall heart health.
+                </p>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
